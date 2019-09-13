@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Inspiration Details</h1>
+
+<div class="card">
+  <div class="card-content">
+    <span class="card-title">{{ inspiration.name }}</span>
+    <p>Category: {{ inspiration.category }}</p>
+    <p>Description: {{ inspiration.description }}</p>
+  </div>
+</div>
+
+{% endblock %}

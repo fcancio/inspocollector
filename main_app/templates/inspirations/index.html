@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Inspiration List</h1>
+
+{% for inspiration in inspirations %}
+  <div class="card">
+    <a href="{% url 'detail' inspiration.id %}">
+    <div class="card-content">
+      <p>Name: {{ inspiration.name }}</p>
+      <p>Category: {{ inspiration.category }}</p>
+      <p>Description: {{ inspiration.description }}</p>
+    </div>
+    </a>
+  </div>
+
+{% endfor %}
+
+{% endblock %}
